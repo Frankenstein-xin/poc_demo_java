@@ -56,7 +56,7 @@ under the License.
         <mirror>
             <id>poc</id>
             <name>poc_maven</name>
-            <url>http://180.184.39.147:8081/repository/daimler-office-maven/</url>
+            <url>http://172.16.0.2:8081/repository/daimler-office-maven/</url>
             <mirrorOf>central</mirrorOf>
         </mirror>
     </mirrors>
@@ -69,9 +69,9 @@ under the License.
             </activation>
             <repositories>
                 <repository>
-                    <id>poc_maven</id>
-                    <name>poc-maven-public</name>
-                    <url>http://180.184.39.147:8081/repository/daimler-office-maven/</url>
+                    <id>poc</id>
+                    <name>poc</name>
+                    <url>http://172.16.0.2:8081/repository/daimler-office-maven/</url>
                     <releases>
                         <enabled>true</enabled>
                     </releases>
@@ -82,8 +82,8 @@ under the License.
             </repositories>
             <pluginRepositories>
                 <pluginRepository>
-                    <id>maven-public-plugin</id>
-                    <url>http://180.184.39.147:8081/repository/daimler-office-maven/</url>
+                    <id>poc</id>
+                    <url>http://172.16.0.2:8081/repository/daimler-office-maven/</url>
                     <releases>
                         <enabled>true</enabled>
                     </releases>
