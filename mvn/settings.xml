@@ -45,11 +45,18 @@ under the License.
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <servers>
+        <server>
+            <id>poc</id>
+            <username>${server.username}</username>
+            <password>${server.password}</password>
+        </server>
+    </servers>
     <mirrors>
         <mirror>
             <id>poc</id>
             <name>poc_maven</name>
-            <url>http://172.16.0.2:8081/repository/daimler-office-maven/</url>
+            <url>http://180.184.39.147:8081/repository/daimler-office-maven/</url>
             <mirrorOf>central</mirrorOf>
         </mirror>
     </mirrors>
@@ -64,7 +71,7 @@ under the License.
                 <repository>
                     <id>poc_maven</id>
                     <name>poc-maven-public</name>
-                    <url>http://172.16.0.2:8081/repository/daimler-office-maven/</url>
+                    <url>http://180.184.39.147:8081/repository/daimler-office-maven/</url>
                     <releases>
                         <enabled>true</enabled>
                     </releases>
@@ -76,7 +83,7 @@ under the License.
             <pluginRepositories>
                 <pluginRepository>
                     <id>maven-public-plugin</id>
-                    <url>http://172.16.0.2:8081/repository/daimler-office-maven/</url>
+                    <url>http://180.184.39.147:8081/repository/daimler-office-maven/</url>
                     <releases>
                         <enabled>true</enabled>
                     </releases>
